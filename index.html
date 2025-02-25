@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>hatoのプロフィール</title>
+  <!-- おしゃれな細いフォント：Montserrat -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- プロフィールセクション（フェードイン: animation-delay で順次表示） -->
+    <section class="profile fade-in" style="animation-delay: 0.2s;">
+      <img src="assets/images/profile.jpg" alt="プロフィール画像">
+      <h1>hato</h1>
+      <p>しぐれういをゆる～く推している男子高校生。</p>
+      
+      <!-- 詳細情報（初期は非表示／高さ0） -->
+      <div class="profile-details">
+        <hr class="divider">
+        <h2>| 誕生日 |</h2>
+        <p>7月17日</p>
+        <h2>| 居住地 |</h2>
+        <p>関東</p>
+        <h2>| 最近の活動 |</h2>
+        <p>Blenderを使ったうい先生のモデリング、<span class="break-point">マインクラフトのデータパック制作</span></p>
+        <h2>| 好きなゲーム |</h2>
+        <p>Splatoon、Minecraft、<span class="break-point">Apex、プロジェクトセカイ</span></p>
+        <h2>| 好きな曲 |</h2>
+        <p>打上花火、ひっひっふー、<span class="break-point">ノンブレス・オブリージュなど</span></p>
+        <h2>| 好きなアニメ |</h2>
+        <p>リコリス・リコイル、ぼっち・ざ・ろっく</p>
+      </div>
+      
+      <!-- read more / read less ボタン -->
+      <button class="read-more" id="readMoreBtn">
+        <span>さらに表示</span>
+        <!-- 初期状態は下向きの矢印 -->
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 6L8 10L12 6" stroke="#007BFF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      
+      <hr class="divider">
+
+      <div class="sns-links">
+        <a href="https://x.com/hato_1198" target="_blank">Twitter</a>
+        <a href="https://bsky.app/profile/hato1198.bsky.social" target="_blank">Bluesky</a>
+        <a href="https://www.youtube.com/@hato_1198" target="_blank">YouTube</a>
+        <a href="https://note.com/hato1198" target="_blank">note</a>
+        <a href="https://github.com/hato1198" target="_blank">GitHub</a>
+      </div>
+    </section>
+
+    <div class="section-divider fade-in" style="animation-delay: 0.4s;">
+      作成したサイト
+    </div>
+    
+    <!-- サイト一覧セクション -->
+    <section class="sites fade-in" style="animation-delay: 0.6s;">
+      <!-- サイトカード1 -->
+      <a class="site-card" href="https://hato1198.github.io/mouse-cursor-checker/" target="_blank">
+        <img src="assets/images/site1.jpg" alt="サイト1のイメージ">
+        <div class="card-content">
+          <h2>マウスカーソルチェッカー</h2>
+          <p>13種類のマウスカーソルの見た目をWEB上で簡単にチェックできるサイトです。</p>
+        </div>
+      </a>
+      <!-- サイトカード2 -->
+      <a class="site-card" href="https://hato1198.github.io/seat-changer/" target="_blank">
+        <img src="assets/images/noimage.jpg" alt="サイト2のイメージ">
+        <div class="card-content">
+          <h2>ランダム席替えツール</h2>
+          <p>くじ引き風の席替えができるサイトです。座席表の自動生成も可能です。</p>
+        </div>
+      </a>
+      <!-- サイトカード3 -->
+      <a class="site-card" href="https://hato1198.github.io/" target="_blank">
+        <img src="assets/images/noimage.jpg" alt="サイト3のイメージ">
+        <div class="card-content">
+          <h2>準備中……</h2>
+          <p></p>
+        </div>
+      </a>
+    </section>
+  </div>
+  
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
