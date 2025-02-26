@@ -189,6 +189,10 @@ body {
     font-size: 1em;
     margin: 12px 0 5px;
   }
+  .section-divider {
+  padding: 10px;
+  font-size: 1.1em;
+  }
   .site-card h2 {
     font-size: 1.2em;
   }
