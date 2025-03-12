@@ -1,0 +1,179 @@
+/* リセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+  background: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+header img.profile {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+section {
+  margin-bottom: 30px;
+}
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #eee;
+  font-weight: 300;
+}
+.intro p {
+  margin-bottom: 10px;
+}
+.intro a {
+  color: #0077cc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.intro a:hover {
+  color: #005fa3;
+}
+/* プロフィール詳細のスタイル */
+.profile-details {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.profile-details li {
+  padding: 10px 15px;
+}
+.profile-details li:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+.profile-details li:nth-child(even) {
+  background-color: #fff;
+}
+.profile-row {
+  display: flex;
+  align-items: center;
+}
+.profile-row .label {
+  min-width: 100px;
+}
+.profile-row .divider {
+  width: 1px;
+  height: 20px;
+  background: #ccc;
+  margin: 0 10px;
+}
+.profile-row .value {
+  flex: 1;
+}
+.profile-row a {
+  color: #0077cc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.profile-row a:hover {
+  color: #005fa3;
+}
+/* 自作サイトセクション */
+.project-section {
+  margin-bottom: 30px;
+}
+.project-card {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #eee;
+  padding: 12px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+.project-card:hover {
+  background: #f0f0f0;
+}
+.project-card img {
+  width: 48px;
+  height: 48px;
+  margin-right: 12px;
+}
+.project-card h3 {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+/* 他サイトリンク */
+.external-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.external-links a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #eee;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+.external-links a:hover {
+  background: #f0f0f0;
+}
+.external-links img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+  
+/* スマホなどの小さい画面用の調整 */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+    padding: 20px 0;
+  }
+  header img.profile {
+    width: 80px;
+    height: 80px;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  section h2 {
+    font-size: 1.3rem;
+  }
+  .profile-row .label {
+    min-width: 80px;
+  }
+  .external-links {
+    gap: 10px;
+  }
+  .profile-row .label {
+    min-width: 80px;
+  }
+  .external-links img {
+    width: 20px;
+    height: 20px;
+  }
+}
