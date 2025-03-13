@@ -98,7 +98,7 @@ section h2 {
 }
 /* 自作サイトセクション */
 .project-section {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .project-card {
   display: flex;
@@ -109,6 +109,8 @@ section h2 {
   padding: 12px;
   border-radius: 8px;
   transition: background 0.3s;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
 }
 .project-card:hover {
   background: #f0f0f0;
@@ -120,7 +122,7 @@ section h2 {
 }
 .project-card h3 {
   font-size: 1.3rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 /* 他サイトリンク */
 .external-links {
