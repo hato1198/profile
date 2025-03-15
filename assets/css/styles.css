@@ -205,7 +205,9 @@ section h2 {
 .twitter-timeline {
   display: block;
 }
-
+.warning{
+  margin-top: 8px;
+}
 /* リンク */
 .external-links {
   display: flex;
