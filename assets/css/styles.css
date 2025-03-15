@@ -190,7 +190,7 @@ section h2 {
 
 .posts-frame{
   background-color: #f0f0f0;
-  border-radius: 8px;
+  border-radius: 12px;
 }
 .posts-content{
   width: 480px;
@@ -200,9 +200,9 @@ section h2 {
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+  border: 1px solid #eee;
 }
 .twitter-timeline {
-  border: 1px solid #eee;
   display: block;
 }
 
@@ -260,8 +260,9 @@ section h2 {
     font-size: 1.2rem;
     font-weight: 300;
   }
-  .posts-frame{
-    background-color: #1fe0;
+  .posts-content{
+    width: 100%;
+    max-width: 480px;
   }
   .external-links {
     gap: 10px;
