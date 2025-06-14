@@ -7,279 +7,318 @@
 
 /* 全体 */
 body {
-font-family: 'Noto Sans JP', sans-serif;
-font-weight: 300;
-/* ダークテーマの斜めグラデーション背景（青・紺・紫・黒） */
-background: linear-gradient(135deg, #000428, #001f54, #270082, #000428);
-color: #e0e0e0;
-line-height: 1.6;
-padding: 20px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
+  /* 白基調の落ち着いたグラデーション背景 */
+  background: linear-gradient(135deg, #f0f2f5, #e6e9ed);
+  color: #333; /* 基本の文字色をダークグレーに */
+  line-height: 1.6;
+  padding: 20px;
 }
 
 .container {
-max-width: 780px;
-margin: auto;
-/* ガラスモーフィズム効果 */
-background: rgba(255, 255, 255, 0.05);
-padding: 30px;
-border-radius: 8px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
-backdrop-filter: blur(10px);
--webkit-backdrop-filter: blur(10px);
-border: 1px solid rgba(255, 255, 255, 0.2);
+  max-width: 780px;
+  margin: auto;
+  /* グラスモーフィズム効果 (白基調に調整) */
+  background: rgba(255, 255, 255, 0.75); /* 背景を明るく、透明度を調整 */
+  padding: 30px;
+  border-radius: 12px; /* 角を少し丸く */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15); /* 影を柔らかく */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(200, 200, 200, 0.4); /* ボーダーを薄いグレーに */
 }
 
 /* ヘッダー */
 header {
-display: flex;
-align-items: center;
-margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
 }
 header img.profile {
-width: 100px;
-height: 100px;
-border-radius: 50%;
-object-fit: cover;
-margin-right: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 3px solid #fff; /* プロフィール画像に白い縁取り */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 header h1 {
-font-size: 2.5rem;
-font-weight: 300;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #222; /* h1の文字色を少し濃く */
 }
 
 /* 共通 */
 section {
-margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 section h2 {
-font-size: 1.5rem;
-margin-bottom: 15px;
-padding-bottom: 8px;
-border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-font-weight: 300;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #ddd; /* ボーダーの色を薄いグレーに */
+  font-weight: 400; /* 見出しのウェイトを少し上げる */
+  color: #444;
 }
 
 /* 自己紹介 */
 .intro p {
-margin-bottom: 10px;
+  margin-bottom: 10px;
+  color: #555; /* 通常のテキストより少し薄く */
 }
 .intro a {
-color: #66ccff;
-text-decoration: none;
-transition: color 0.3s;
+  color: #007bff; /* リンク色を標準的な青に */
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 .intro a:hover {
-color: #a3e0ff;
+  color: #0056b3; /* ホバー時のリンク色 */
 }
 
 /* プロフィール詳細 */
 .profile-details {
-list-style: none;
-margin: 0;
-padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 .profile-details li {
-padding: 10px 15px;
-border-radius: 6px;
-margin-bottom: 8px;
+  padding: 12px 15px; /* パディングを少し調整 */
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
 }
+/* しましまデザイン */
 .profile-details li:nth-child(odd) {
-background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(0, 0, 0, 0.02); /* 非常に薄いグレー */
 }
 .profile-details li:nth-child(even) {
-background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.05); /* 少し濃い薄いグレー */
 }
 .profile-row {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 .profile-row .label {
-min-width: 100px;
+  min-width: 100px;
+  font-weight: 400; /* ラベルのウェイトを少し上げる */
+  color: #333;
 }
 .profile-row .divider {
-width: 1px;
-height: 20px;
-background: rgba(255, 255, 255, 0.3);
-margin: 0 10px;
+  width: 1px;
+  height: 20px;
+  background: #ccc; /* 区切り線の色を調整 */
+  margin: 0 15px; /* マージン調整 */
 }
 .profile-row .value {
-flex: 1;
+  flex: 1;
+  color: #555;
 }
 .profile-row a {
-color: #66ccff;
-text-decoration: none;
-transition: color 0.3s;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 .profile-row a:hover {
-color: #a3e0ff;
+  color: #0056b3;
 }
 
 /* 自作サイト */
 .project-section {
-margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .project-card {
-display: flex;
-align-items: center;
-text-decoration: none;
-color: inherit;
-border: 1px solid rgba(255, 255, 255, 0.1);
-padding: 12px;
-border-radius: 8px;
-transition: background 0.3s;
-margin-bottom: 10px;
-font-size: 0.9rem;
-background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333; /* カードの文字色 */
+  border: 1px solid #e0e0e0; /* ボーダーを薄いグレーに */
+  padding: 15px; /* パディング調整 */
+  border-radius: 8px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  background: #fff; /* カード背景を白に */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 .project-card:hover {
-background: rgba(255, 255, 255, 0.1);
+  background: #f8f9fa; /* ホバー時の背景色 */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 .project-card img {
-width: 48px;
-height: 48px;
-margin-right: 12px;
+  width: 48px;
+  height: 48px;
+  margin-right: 15px; /* マージン調整 */
+  border-radius: 4px;
 }
 .project-card h3 {
-font-size: 1.3rem;
-font-weight: 300;
+  font-size: 1.3rem;
+  font-weight: 400; /* ウェイト調整 */
+  color: #222;
+  margin-bottom: 4px;
+}
+.project-card p {
+    color: #666;
 }
 
 /* 投稿 */
 .loader-wrapper {
-display: flex;
-justify-content: center;
-align-items: center;
-height: 700px;
-margin: 0;
-border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  margin: 0;
+  border: none;
 }
 .loader,
 .loader:after {
-border-radius: 50%;
-width: 10em;
-height: 10em;
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
 }
 .loader {
-margin: 0;
-font-size: 10px;
-position: relative;
-text-indent: -9999em;
-border-top: 0.8em solid rgba(102,204,255, 0.2);
-border-right: 0.8em solid rgba(102,204,255, 0.2);
-border-bottom: 0.8em solid rgba(102,204,255, 0.2);
-border-left: 0.8em solid #66ccff;
--webkit-transform: translateZ(0);
--ms-transform: translateZ(0);
-transform: translateZ(0);
--webkit-animation: load8 1.1s infinite linear;
-animation: load8 1.1s infinite linear;
+  margin: 0;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  /* ローダーの色を調整 (白背景で見やすく) */
+  border-top: 0.8em solid rgba(0, 123, 255, 0.2);
+  border-right: 0.8em solid rgba(0, 123, 255, 0.2);
+  border-bottom: 0.8em solid rgba(0, 123, 255, 0.2);
+  border-left: 0.8em solid #007bff; /* メインカラーに合わせる */
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load8 1.1s infinite linear;
+  animation: load8 1.1s infinite linear;
 }
 @-webkit-keyframes load8 {
-0% {
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-100% {
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-}
+  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
 }
 @keyframes load8 {
-0% {
-  -webkit-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-100% {
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-}
+  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
 }
 
 .posts-frame {
-background-color: rgba(0, 0, 0, 0.3);
-border-radius: 12px;
+  /* フレームの背景を全体のテーマに合わせる */
+  background-color: rgba(220, 225, 230, 0.6); 
+  border-radius: 12px;
+  padding: 1px; /* 内部のボーダー対策 */
 }
 .posts-content {
-width: 480px;
-height: 702px;
-border-radius: 12px;
-background-color: rgba(0, 0, 0, 0.7);
-margin: 0 auto;
-position: relative;
-overflow: hidden;
-border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 480px;
+  height: 702px; /* Twitterウィジェットの高さに合わせる */
+  border-radius: 11px; /* フレームより少し小さく */
+  /* Twitterウィジェット(dark)が自然に見えるように暗めの背景 */
+  background-color: #fff;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
 }
 .twitter-timeline {
-display: block;
+  display: block;
 }
 .warning {
-margin-top: 8px;
+  margin-top: 10px; /* マージン調整 */
+  font-size: 0.85rem;
+  color: #777;
+  text-align: center;
 }
 
 /* リンク */
 .external-links {
-display: flex;
-flex-wrap: wrap;
-gap: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 .external-links a {
-display: flex;
-align-items: center;
-text-decoration: none;
-color: inherit;
-border: 1px solid rgba(255, 255, 255, 0.1);
-padding: 8px 12px;
-border-radius: 6px;
-transition: background 0.3s;
-background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #e0e0e0; /* ボーダー色調整 */
+  padding: 10px 15px; /* パディング調整 */
+  border-radius: 8px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  background: #fff; /* 背景を白に */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 .external-links a:hover {
-background: rgba(255, 255, 255, 0.1);
+  background: #f8f9fa; /* ホバー時の背景色 */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 .external-links img {
-width: 24px;
-height: 24px;
-margin-right: 8px;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px; /* マージン調整 */
+}
+.external-links span {
+    font-size: 0.9rem;
 }
 
 /* スマホなどの小さい画面用 */
 @media (max-width: 600px) {
-body {
-  font-size: 14px;
-  padding: 20px 8px;
-}
-.container {
-  padding: 12px;
-}
-header img.profile {
-  width: 80px;
-  height: 80px;
-}
-header h1 {
-  font-size: 2rem;
-}
-section h2 {
-  font-size: 1.3rem;
-}
-.profile-row .label {
-  min-width: 80px;
-}
-.project-card {
-  font-size: 0.8rem;
-}
-.project-card h3 {
-  font-size: 1.2rem;
-  font-weight: 300;
-}
-.posts-content {
-  width: 100%;
-  max-width: 480px;
-}
-.external-links {
-  gap: 10px;
-}
-.external-links img {
-  width: 20px;
-  height: 20px;
-}
+  body {
+    font-size: 14px;
+    padding: 15px 8px; /* パディング調整 */
+  }
+  .container {
+    padding: 15px; /* パディング調整 */
+  }
+  header {
+    flex-direction: column; /* ヘッダーを縦並びに */
+    align-items: center;
+    text-align: center;
+  }
+  header img.profile {
+    width: 90px;
+    height: 90px;
+    margin-right: 0; /* マージン解除 */
+    margin-bottom: 15px; /* 下マージン追加 */
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  section h2 {
+    font-size: 1.3rem;
+  }
+  .profile-row {
+    flex-direction: column; /* プロフィール項目も縦並びに */
+    align-items: flex-start;
+  }
+  .profile-row .label {
+    min-width: auto;
+    margin-bottom: 4px;
+  }
+  .profile-row .divider {
+    display: none; /* スマホでは区切り線を非表示 */
+  }
+  .profile-row .value {
+    padding-left: 0;
+  }
+  .project-card {
+    font-size: 0.8rem;
+    padding: 12px;
+  }
+  .project-card h3 {
+    font-size: 1.1rem; /* フォントサイズ調整 */
+  }
+  .posts-content {
+    width: 100%; /* 横幅いっぱい */
+    max-width: 480px;
+    /* 高さは可変にしても良いが、Twitterウィジェットの仕様による */
+  }
+  .external-links {
+    gap: 10px;
+  }
+  .external-links a {
+    padding: 8px 12px;
+  }
+  .external-links img {
+    width: 20px;
+    height: 20px;
+  }
 }
