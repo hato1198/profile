@@ -9,9 +9,8 @@
 body {
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 300;
-  /* 白基調の落ち着いたグラデーション背景 */
   background: linear-gradient(135deg, #f0f2f5, #e6e9ed);
-  color: #333; /* 基本の文字色をダークグレーに */
+  color: #333;
   line-height: 1.6;
   padding: 20px;
 }
@@ -19,14 +18,14 @@ body {
 .container {
   max-width: 780px;
   margin: auto;
-  /* グラスモーフィズム効果 (白基調に調整) */
-  background: rgba(255, 255, 255, 0.75); /* 背景を明るく、透明度を調整 */
+  /* グラスモーフィズム効果 */
+  background: rgba(255, 255, 255, 0.75);
   padding: 30px;
-  border-radius: 12px; /* 角を少し丸く */
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15); /* 影を柔らかく */
+  border-radius: 12px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(200, 200, 200, 0.4); /* ボーダーを薄いグレーに */
+  border: 1px solid rgba(200, 200, 200, 0.4);
 }
 
 /* ヘッダー */
@@ -41,13 +40,13 @@ header img.profile {
   border-radius: 50%;
   object-fit: cover;
   margin-right: 20px;
-  border: 3px solid #fff; /* プロフィール画像に白い縁取り */
+  border: 3px solid #fff;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 header h1 {
   font-size: 2.5rem;
   font-weight: 300;
-  color: #222; /* h1の文字色を少し濃く */
+  color: #222;
 }
 
 /* 共通 */
@@ -58,23 +57,23 @@ section h2 {
   font-size: 1.5rem;
   margin-bottom: 15px;
   padding-bottom: 8px;
-  border-bottom: 2px solid #ddd; /* ボーダーの色を薄いグレーに */
-  font-weight: 400; /* 見出しのウェイトを少し上げる */
+  border-bottom: 2px solid #ddd;
+  font-weight: 300;
   color: #444;
 }
 
 /* 自己紹介 */
 .intro p {
   margin-bottom: 10px;
-  color: #555; /* 通常のテキストより少し薄く */
+  color: #555;
 }
 .intro a {
-  color: #007bff; /* リンク色を標準的な青に */
+  color: #007bff;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 .intro a:hover {
-  color: #0056b3; /* ホバー時のリンク色 */
+  color: #0056b3;
 }
 
 /* プロフィール詳細 */
@@ -84,11 +83,10 @@ section h2 {
   padding: 0;
 }
 .profile-details li {
-  padding: 12px 15px; /* パディングを少し調整 */
+  padding: 12px 15px;
   border-radius: 6px;
   transition: background-color 0.3s ease;
 }
-/* しましまデザイン */
 .profile-details li:nth-child(odd) {
   background-color: rgba(0, 0, 0, 0.02); /* 非常に薄いグレー */
 }
@@ -101,14 +99,13 @@ section h2 {
 }
 .profile-row .label {
   min-width: 100px;
-  font-weight: 400; /* ラベルのウェイトを少し上げる */
   color: #333;
 }
 .profile-row .divider {
   width: 1px;
   height: 20px;
-  background: #ccc; /* 区切り線の色を調整 */
-  margin: 0 15px; /* マージン調整 */
+  background: #ccc;
+  margin: 0 15px;
 }
 .profile-row .value {
   flex: 1;
@@ -131,29 +128,29 @@ section h2 {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #333; /* カードの文字色 */
-  border: 1px solid #e0e0e0; /* ボーダーを薄いグレーに */
-  padding: 15px; /* パディング調整 */
+  color: #333;
+  border: 1px solid #e0e0e0;
+  padding: 15px;
   border-radius: 8px;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   margin-bottom: 12px;
   font-size: 0.9rem;
-  background: #fff; /* カード背景を白に */
+  background: #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 .project-card:hover {
-  background: #f8f9fa; /* ホバー時の背景色 */
+  background: #f8f9fa;
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 .project-card img {
   width: 48px;
   height: 48px;
-  margin-right: 15px; /* マージン調整 */
+  margin-right: 15px;
   border-radius: 4px;
 }
 .project-card h3 {
   font-size: 1.3rem;
-  font-weight: 400; /* ウェイト調整 */
+  font-weight: 300;
   color: #222;
   margin-bottom: 4px;
 }
@@ -181,11 +178,10 @@ section h2 {
   font-size: 10px;
   position: relative;
   text-indent: -9999em;
-  /* ローダーの色を調整 (白背景で見やすく) */
   border-top: 0.8em solid rgba(0, 123, 255, 0.2);
   border-right: 0.8em solid rgba(0, 123, 255, 0.2);
   border-bottom: 0.8em solid rgba(0, 123, 255, 0.2);
-  border-left: 0.8em solid #007bff; /* メインカラーに合わせる */
+  border-left: 0.8em solid #007bff;
   -webkit-transform: translateZ(0);
   -ms-transform: translateZ(0);
   transform: translateZ(0);
@@ -202,7 +198,6 @@ section h2 {
 }
 
 .posts-frame {
-  /* フレームの背景を全体のテーマに合わせる */
   background-color: rgba(220, 225, 230, 0.6); 
   border-radius: 12px;
   padding: 1px; /* 内部のボーダー対策 */
@@ -211,7 +206,6 @@ section h2 {
   width: 480px;
   height: 702px; /* Twitterウィジェットの高さに合わせる */
   border-radius: 11px; /* フレームより少し小さく */
-  /* Twitterウィジェット(dark)が自然に見えるように暗めの背景 */
   background-color: #fff;
   margin: 0 auto;
   position: relative;
@@ -222,7 +216,7 @@ section h2 {
   display: block;
 }
 .warning {
-  margin-top: 10px; /* マージン調整 */
+  margin-top: 10px;
   font-size: 0.85rem;
   color: #777;
   text-align: center;
@@ -239,21 +233,21 @@ section h2 {
   align-items: center;
   text-decoration: none;
   color: #333;
-  border: 1px solid #e0e0e0; /* ボーダー色調整 */
-  padding: 10px 15px; /* パディング調整 */
+  border: 1px solid #e0e0e0;
+  padding: 10px 15px;
   border-radius: 8px;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  background: #fff; /* 背景を白に */
+  background: #fff;
   box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 .external-links a:hover {
-  background: #f8f9fa; /* ホバー時の背景色 */
+  background: #f8f9fa;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 .external-links img {
   width: 24px;
   height: 24px;
-  margin-right: 10px; /* マージン調整 */
+  margin-right: 10px;
 }
 .external-links span {
     font-size: 0.9rem;
@@ -263,10 +257,10 @@ section h2 {
 @media (max-width: 600px) {
   body {
     font-size: 14px;
-    padding: 15px 8px; /* パディング調整 */
+    padding: 15px 8px;
   }
   .container {
-    padding: 15px; /* パディング調整 */
+    padding: 15px;
   }
   header {
     flex-direction: column; /* ヘッダーを縦並びに */
@@ -276,8 +270,7 @@ section h2 {
   header img.profile {
     width: 90px;
     height: 90px;
-    margin-right: 0; /* マージン解除 */
-    margin-bottom: 15px; /* 下マージン追加 */
+    margin: 15px 0;
   }
   header h1 {
     font-size: 2rem;
@@ -286,15 +279,16 @@ section h2 {
     font-size: 1.3rem;
   }
   .profile-row {
-    flex-direction: column; /* プロフィール項目も縦並びに */
+    flex-direction: column;
     align-items: flex-start;
   }
   .profile-row .label {
     min-width: auto;
     margin-bottom: 4px;
+    font-weight: 400;
   }
   .profile-row .divider {
-    display: none; /* スマホでは区切り線を非表示 */
+    display: none;
   }
   .profile-row .value {
     padding-left: 0;
@@ -304,12 +298,11 @@ section h2 {
     padding: 12px;
   }
   .project-card h3 {
-    font-size: 1.1rem; /* フォントサイズ調整 */
+    font-size: 1.1rem;
   }
   .posts-content {
-    width: 100%; /* 横幅いっぱい */
+    width: 100%;
     max-width: 480px;
-    /* 高さは可変にしても良いが、Twitterウィジェットの仕様による */
   }
   .external-links {
     gap: 10px;
