@@ -303,6 +303,7 @@ section h2 {
   .posts-content {
     width: 100%;
     max-width: 480px;
+    max-height: 520px;
   }
   .warning {
     text-align: left;
