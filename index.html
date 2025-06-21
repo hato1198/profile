@@ -1,36 +1,55 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="https://hato1198.github.io/profile/assets/images/favicon.png" type="image/x-icon"/>
-  <link rel="shortcut icon" href="https://hato1198.github.io/profile/assets/images/favicon.png" type="image/x-icon"/>
-  <title>hato - プロフィール</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <meta name="generator" content="Jekyll v3.10.0" />
-  <meta property="og:title" content="hatoのプロフィール" />
-  <meta name="author" content="hato1198" />
-  <meta property="og:locale" content="en_US" />
-  <meta name="description" content="hatoの自己紹介、プロフィール、他サイトのリンクです。" />
-  <meta property="og:description" content="hatoの自己紹介、プロフィール、他サイトのリンクです。" />
-  <link rel="canonical" href="https://hato1198.github.io/profile/" />
-  <meta property="og:url" content="https://hato1198.github.io/profile/" />
-  <meta property="og:site_name" content="hatoのプロフィール" />
-  <meta property="og:image" content="https://hato1198.github.io/profile/assets/images/profile.jpg" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary" />
-  <meta property="twitter:image" content="https://hato1198.github.io/profile/assets/images/profile.jpg" />
-  <meta property="twitter:title" content="hatoのプロフィール" />
-  <meta name="twitter:site" content="@hato_1198" />
-  <meta name="twitter:creator" content="@hato1198" />
-  <script>
-    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-  </script>
-  <script defer src="/_vercel/insights/script.js"></script>
+    <!-- 文字コード・レスポンシブ対応 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ファビコン -->
+    <link rel="icon" href="https://hato1198.github.io/profile/assets/images/favicon.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="https://hato1198.github.io/profile/assets/images/favicon.png" type="image/x-icon"/>
+
+    <!-- フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- メインスタイル -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- ページタイトル -->
+    <title>hato - プロフィール</title>
+
+    <!-- 検索エンジン・SNS向けメタ情報 -->
+    <meta name="description" content="hatoの自己紹介、プロフィール、他サイトのリンクです。" />
+    <link rel="canonical" href="https://hato1198.github.io/profile/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="hatoのプロフィール" />
+    <meta property="og:description" content="hatoの自己紹介、プロフィール、他サイトのリンクです。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hato1198.github.io/profile/" />
+    <meta property="og:image" content="https://hato1198.github.io/profile/assets/images/profile.jpg" />
+    <meta property="og:site_name" content="hatoのプロフィール" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta property="twitter:image" content="https://hato1198.github.io/profile/assets/images/profile.jpg" />
+    <meta property="twitter:title" content="hatoのプロフィール" />
+    <meta name="twitter:site" content="@hato_1198_ui" />
+    <meta name="twitter:creator" content="@hato_1198_ui" />
+
+    <!-- その他メタ情報 -->
+    <meta name="author" content="hato1198" />
+
+    <!-- Vercel Web Analytics -->
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
 </head>
+
 <body>
   <div class="container">
     <!-- ヘッダー（プロフィール画像と名前） -->
@@ -111,18 +130,25 @@
     <!-- 自作サイト -->
     <section class="project-section">
       <h2>作成したサイト</h2>
-      <a href="https://hato1198.github.io/tetris/" target="_blank" class="project-card">
-        <img src="https://hato1198.github.io/tetris/assets/images/favicon.ico" alt="テトリス ロゴ">
+      <a href="https://focus-lines-generator.vercel.app/" target="_blank" class="project-card">
+        <img src="https://focus-lines-generator.vercel.app/assets/favicon.png" alt="集中線ジェネレーター ロゴ">
+        <div class="project-info">
+          <h3>集中線ジェネレーター</h3>
+          <p>画像に集中線を追加できる無料ツール</p>
+        </div>
+      </a>
+      <a href="https://neontetris.vercel.app/" target="_blank" class="project-card">
+        <img src="https://neontetris.vercel.app/assets/images/favicon.ico" alt="テトリス ロゴ">
         <div class="project-info">
           <h3>Tetris</h3>
-          <p>ブラウザで遊べる無料のテトリス</p>
+          <p>ブラウザでいつでもすぐに遊べるテトリス</p>
         </div>
       </a>
       <a href="https://hato1198.github.io/seat-changer/" target="_blank" class="project-card">
         <img src="https://hato1198.github.io/seat-changer/assets/images/favicon.ico" alt="ランダム席替えツール ロゴ">
         <div class="project-info">
           <h3>ランダム席替えツール</h3>
-          <p>くじ引き風の席替えを簡単にできるサイト</p>
+          <p>くじ引き風の席替えが簡単にできるツール</p>
         </div>
       </a>
       <a href="https://hato1198.github.io/mouse-cursor-checker/" target="_blank" class="project-card">
